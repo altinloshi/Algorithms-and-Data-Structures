@@ -1,0 +1,24 @@
+B.
+worst case is O(n^2) when all the elements needs to be moved 
+to their postion through swaps
+best case is O(n)when the array is already sorted, and it 
+requires only one pass to check if everything is on order
+average case is  O(n/2 x n) = O(n/2 x n) = O(n/2 x n) = O(n/2 x n) = O (n^2)
+
+C.
+Insertion Sort, Merge Sort, and Bubble Sort are stable because they preserve 
+the relative order of equal elements during sorting.
+
+Heap Sort is considered unstable because its swapping operations
+ may alter the relative positions of equal elements within the sorted array.
+
+D.
+The sorting algorithms in which the order of elements affects the time complexity of the sorting algorithm
+ is known as an adaptive sorting algorithm. so insertion sort and bubble sort
+
+
+The sorting algorithms in which the order of elements of the data doesn’t affect the time complexity of the 
+sorting algorithms are known as non-adaptive sorting algorithms. Merge sort and heap sort
+
+
+

@@ -1,0 +1,18 @@
+The worst-case time complexity for Bucket Sort is O(n^2). This arises when the input sequence is highly unbalanced,
+causing all elements to be placed into a single bucket. In such a scenario, Bucket Sort essentially degenerates into 
+a less efficient sorting algorithm, such as Insertion Sort, when sorting each bucket.
+
+This worst-case scenario occurs when the input sequence is reversely sorted, 
+as it results in all elements being placed into a single bucket, leading to quadratic 
+time complexity due to the subsequent sorting of that bucket.
+
+In summary, when the input sequence lacks distribution and all elements end up in a single bucket, 
+Bucket Sort's time complexity degrades to O(n^2), reflecting the worst-case performance of the algorithm.
+
+
+
+In the given example input sequence <0.19, 0.18, 0.17, 0.16, 0.15, 0.14, 0.13, 0.12, 0.11, 0.1>, while Bucket 
+Sort may initially rely on Insertion Sort to sort each bucket, the overall time complexity could be improved by 
+employing a more efficient sorting algorithm for the buckets. If a more efficient algorithm, such as QuickSort or MergeSort, 
+were used within each bucket, the worst-case time complexity of Bucket Sort would align with that of the chosen 
+substitute algorithm rather than being inherently limited to O(n^2)

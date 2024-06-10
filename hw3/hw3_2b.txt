@@ -1,0 +1,8 @@
+Initialization: first iteration the outer loop (i=0) the subarray 
+arr[0:0]have a single elemnt, which is sorted.
+
+Maintenance: now the subarray is sorted arr[0:1] is sorted, now the current iteration, inner loop finds index of the minimum element in the unsorted 
+array arr[i:n]. then swaps the minimum element with the current one arr[i]= arr[min_index] now the subarray is sorted as arr[0:i+1].
+
+Termination: the condition to end is when i becomes n-1. this means that the outer loop has iterated the whole array and now is sorted. and the last 
+element is it on its place because of the last iteration so it is completely sorted.

@@ -1,0 +1,5 @@
+Bottom up heap sort has a better performance because makes 
+less comparisons during the heap construction.
+Bottom up is more suitable when the heap build costs more than building the heap.
+IN general bottom up is better on the context that makes a optimized
+heap construction other things are the same.

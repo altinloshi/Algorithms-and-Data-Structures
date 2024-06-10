@@ -1,0 +1,6 @@
+it will compare and give you which one of the three cases it is 
+for example
+best case   O(logn)
+worst case n^3
+
+average vase  will be in the middle of best case and worst case

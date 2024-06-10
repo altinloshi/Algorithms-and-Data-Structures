@@ -1,0 +1,10 @@
+Median Version: Although this version theoretically selects the most appropriate pivot to ensure efficiency 
+by avoiding cases where the pivot is the smallest or largest element, it suffers from prolonged pivot selection time.
+This prolonged selection time contributes to its inferior performance compared to the other two versions.
+
+Lomuto Version: Despite not putting much emphasis on avoiding the selection of a poor pivot, 
+the Lomuto version remains quite efficient and even outperforms the Median Version. The lack of effort 
+in calculating the optimal pivot, unlike the Median Version, contributes to its efficiency.
+
+Hoare Version: The Hoare version of Quicksort emerges as the top performer among the three. This outcome is logical 
+since the pivot selection method used in this version is both rapid (requires minimal computation) and effective in avoiding poor pivots.

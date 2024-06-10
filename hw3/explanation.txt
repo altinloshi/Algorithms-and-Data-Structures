@@ -1,0 +1,1 @@
+As you can see the time complexity wise they follow the same trend, meaning number of swaps doesn't affect the time complexity.

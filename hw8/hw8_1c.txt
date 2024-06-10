@@ -1,0 +1,18 @@
+count_interval(arr, n, k, a, b) {
+
+    int counter[k+1];
+
+    for (int i to k+1):
+        counter[i] = 0;
+
+    for (int i to n):
+        counter[arr[i]] = counter[arr[i]] + 1
+
+    for (int i to k+1):
+        counter[i] = counter[i] + counter[i-1]
+
+    if (a == 0):
+        return counter[b]
+    else:
+        return counter[b] - counter[a-1]
+}

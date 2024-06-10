@@ -1,0 +1,25 @@
+reverse():
+    if ((head == NULL) || (head.next == NULL)):
+        return
+    
+    //the pointers here are the consntant additional memory
+    prev_node = NULL
+    curr_node = this->head
+    next_node = this->head->next
+    
+    while (next_node != NULL):
+        curr_node->next = prev_node
+        
+        prev_node = curr_node
+        curr_node = next_node
+
+        next_node = next_node->next
+    
+    curr_node.next = prev_node
+    this->head = curr_node
+The algorithm is considered in-situ because it utilizes a fixed amount of additional memory to reverse the linked list,
+irrespective of the list's size. This implies that the algorithm allocates the same amount of extra memory regardless 
+of the length of the linked list.
+
+Regarding its time complexity, it operates in O(n) time. This is due to the presence of a single loop that terminates 
+upon reaching the end of the linked list.

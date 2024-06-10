@@ -1,0 +1,6 @@
+*.zip
+ADS_Review/
+.vscode/
+ADS/
+mock_exam/
+env/

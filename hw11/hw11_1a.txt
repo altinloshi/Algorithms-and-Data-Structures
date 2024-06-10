@@ -1,0 +1,48 @@
+a1) Given the sequence < 3, 10, 2, 4 >, apply the double-hashing strategy for 
+open addressing to store the sequence in the given order in a hash table of 
+size m = 5 with hash functions h1(k) = k mod 5 and h2(k) = 7k mod 8. Document 
+all collisions and how they are resolved. Write down your computations.
+
+a1) 
+Inserting 3:
+h1(3): 3 mod 5 = 3
+
+Hash-Table:
+0
+1
+2
+3 - 3
+4
+
+
+Inserting 10:
+h1(10): 10 mod 5 = 0
+
+Hash-Table:
+0 - 10
+1
+2
+3 - 3
+4
+
+
+Inserting 2:
+h1(2): 2 mod 5 = 2
+
+Hash-Table:
+0 - 10
+1
+2 - 2
+3 - 3
+4
+
+
+Inserting 4:
+h1(4): 4 mod 5 = 4
+
+Hash-Table:
+0 - 10
+1
+2 - 2
+3 - 3
+4 - 4

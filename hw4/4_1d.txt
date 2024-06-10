@@ -1,0 +1,4 @@
+k would dependes on the sorting algorithm, and what kind of functions i am sorting
+also the size of the array exapmle:
+
+as small as the array is i would choose k larger to avoid recursice call and overheads that are associated with merge sorted

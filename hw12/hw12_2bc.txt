@@ -1,0 +1,19 @@
+
+(b) The runtime for the brute force method would be 2^n since the algorithm 
+would have to try all the possible combinations before finding the largest one,
+while the implementation in lst.cpp only has a time complexity of n^2, since
+it starts all the way from bottom and adds up the values with the largest sum
+being at the top of the triangle.
+Note: n here refers to the number of lines the triangle has
+
+(c) A greedy algorithm would not work here since the solution of a subproblem 
+doesn't necessarily lead the global solution. For example:
+    7
+   3 8
+  8 1 0
+ 2 7 4 4
+4 5 2 6 5
+Using a greedy algorithm here would lead us to the sequence: 7 8 1 7 5.
+7 -> 8 because 8 > 3, 8 -> 1 because  1> 0, and so on.
+This is obviously not the correct solution as the correct solution is actually
+the sequence: 7 3 8 7 5

@@ -1,0 +1,8 @@
+The best case for this modfied version would be one where the array is split
+in three equal parts which means that the recurrence formula is:
+    T(n) = 3T(n/3) + O(n)
+    so the time complexity will be nlogn base 3
+The worst case would be when the pivots are the smallest and largest element, 
+which means that the recurrence formula for this case is:
+    T(n) = T(n-2) + 0(n)
+    so the time complexity will be n^2
